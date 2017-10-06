@@ -37,6 +37,7 @@
     <ClCompile Include="ProgressWriter.cpp" />
     <ClCompile Include="Evaluator.cpp" />
     <ClCompile Include="UserDefinedFunction.cpp" />
+    <ClCompile Include="PrimitiveFunctionAttributes.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h" />
@@ -69,6 +70,7 @@
     <ClInclude Include="Variable.h" />
     <ClInclude Include="UserFunctionFactory.h" />
     <ClInclude Include="UserDefinedFunction.h" />
+    <ClInclude Include="SimpleUtils.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="API">

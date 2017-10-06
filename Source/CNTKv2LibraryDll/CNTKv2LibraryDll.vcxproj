@@ -162,6 +162,7 @@
     <ClInclude Include="PrimitiveFunction.h" />
     <ClInclude Include="PrimitiveOpType.h" />
     <ClInclude Include="Serialization.h" />
+    <ClInclude Include="SimpleUtils.h" />
     <ClInclude Include="tensorboard\TensorBoardUtils.h" />
     <ClInclude Include="UserDefinedFunction.h" />
     <ClInclude Include="UserFunctionFactory.h" />
@@ -191,6 +192,7 @@
     <ClCompile Include="NDArrayView.cpp" />
     <ClCompile Include="NDMask.cpp" />
     <ClCompile Include="PrimitiveFunction.cpp" />
+    <ClCompile Include="PrimitiveFunctionAttributes.cpp" />
     <ClCompile Include="proto\CNTK.pb.cc.VS_wrapper.cpp" />
     <ClCompile Include="Serialization.cpp" />
     <ClCompile Include="stdafx.cpp">
