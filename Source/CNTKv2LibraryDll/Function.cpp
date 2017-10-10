@@ -456,7 +456,6 @@ namespace CNTK
         Forward(arguments, outputs, computeDevice, {});
     }
 
-
     void Function::Save(std::vector<char> &vectorBuf)
     {
         Dictionary model = Serialize();
@@ -1409,14 +1408,6 @@ namespace CNTK
         additionalProperties[PrimitiveFunction::AttributeNameEndAxis] = endAxis;
 
         return UnaryOp(PrimitiveOpType::Reshape, operand, std::move(additionalProperties), name);
-    }
-
-    FunctionPtr Flatten(const Variable& operand, const std::wstring& name)
-    {
-        auto operandPlaceholder = PlaceholderVariable();
-        auto result = Reshape(operandPlaceholder, { NDShape::InferredDimension });
-
-        return AsBlock(std::move(result), { { operandPlaceholder, operand } }, L"Flatten", name);
     }
 
     FunctionPtr BinaryOp(PrimitiveOpType op, const Variable& leftOperand, const Variable& rightOperand, Dictionary&& opConfig, const std::wstring& name)

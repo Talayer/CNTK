@@ -751,11 +751,6 @@ namespace CNTK
         ///
         CNTK_API void AdjustSparseBlockColumn(const SparseIndexType* cpuCol2BlockId, size_t numBlocks, bool useBlockId2Col);
 
-        //
-        // Return a new NDArrayView with the underlying data transposed.
-        //
-        CNTK_API NDArrayViewPtr Transpose();
-
         ///
         /// Returns the descriptor of the device that 'this' view resides on
         ///
@@ -3432,7 +3427,6 @@ namespace CNTK
         ///
         CNTK_API FunctionPtr ReplacePlaceholder(const Variable& placeholderReplacement);
 
-
         ///
         CNTK_API void Save(std::vector<char> &vectorBuf);
 
@@ -3883,11 +3877,6 @@ namespace CNTK
     {
         return Reshape(operand, newShape, Axis(0), Axis::EndStaticAxis(), name);
     }
-
-    ///
-    /// Flatten the input tensor to 1D while keeping the batch axis intact.
-    ///
-    CNTK_API FunctionPtr Flatten(const Variable& operand, const std::wstring& name = L"");
 
     ///
     /// Create an instance of the CNTK built-in elementwise tensor addition operation with the specified input operands.
