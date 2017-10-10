@@ -680,7 +680,6 @@ FunctionPtr ONNXToCNTKHelper::CreateFunction(const Node *node, const std::vector
     {
         // TODO: this is experimental code to load Facebook Caffe models.
         // Need to investigate cases here operands' dimensions do not match.
-        // For example we have seen cases: [56, 56, 256] + [56, 56, 16384]. with resnet50.
         FunctionPtr cntkFunction = inputs[0];
         for (int i = 1; i < inputs.size(); i++)
         {
