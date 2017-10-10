@@ -235,12 +235,6 @@ Source/CNTKv2LibraryDll/proto/CNTK.pb.cc
 Source/CNTKv2LibraryDll/proto/CNTK.pb.h
 
 # Auto-generated sources from ONNX proto
-Source/CNTKv2LibraryDll/proto/onnx/protobuf/Type.pb.cc
-Source/CNTKv2LibraryDll/proto/onnx/protobuf/Type.pb.h
-Source/CNTKv2LibraryDll/proto/onnx/protobuf/Data.pb.cc
-Source/CNTKv2LibraryDll/proto/onnx/protobuf/Data.pb.h
-Source/CNTKv2LibraryDll/proto/onnx/protobuf/TensorShape.pb.cc
-Source/CNTKv2LibraryDll/proto/onnx/protobuf/TensorShape.pb.h
 Source/CNTKv2LibraryDll/proto/onnx/protobuf/graph.pb.cc
 Source/CNTKv2LibraryDll/proto/onnx/protobuf/graph.pb.h
 
