@@ -440,7 +440,7 @@ NodeAttributes::const_iterator ONNXToCNTKHelper::FindAttributeIterator(const Nod
         if (required)
         {
             LogicError("Node %s operator %s is missing attribute %s.", 
-                node->Name().c_str(), node->OpType(), attributeName.c_str());
+                node->Name().c_str(), node->OpType().c_str(), attributeName.c_str());
         }
     }
     return itValue;
