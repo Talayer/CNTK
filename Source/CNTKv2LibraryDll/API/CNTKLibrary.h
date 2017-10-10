@@ -751,11 +751,6 @@ namespace CNTK
         ///
         CNTK_API void AdjustSparseBlockColumn(const SparseIndexType* cpuCol2BlockId, size_t numBlocks, bool useBlockId2Col);
 
-        //
-        // Return a new NDArrayView with the underlying data transposed.
-        //
-        CNTK_API NDArrayViewPtr Transpose();
-
         ///
         /// Returns the descriptor of the device that 'this' view resides on
         ///
@@ -3431,7 +3426,6 @@ namespace CNTK
         /// Throws an exception if 'this' Function has multiple placeholders
         ///
         CNTK_API FunctionPtr ReplacePlaceholder(const Variable& placeholderReplacement);
-
 
         ///
         CNTK_API void Save(std::vector<char> &vectorBuf);

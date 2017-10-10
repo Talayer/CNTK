@@ -456,7 +456,6 @@ namespace CNTK
         Forward(arguments, outputs, computeDevice, {});
     }
 
-
     void Function::Save(std::vector<char> &vectorBuf)
     {
         Dictionary model = Serialize();
